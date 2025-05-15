@@ -1,3 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intro to Cryptography</title>
+  <style>
+    :root {
+      --bg-color: #f4f4f9;
+      --text-color: #333;
+      --card-color: #2980b9;
+      --card-hover: #1c5980;
+    }
+
+    body.dark {
+      --bg-color: #1e1e2f;
+      --text-color: #eee;
+      --card-color: #3498db;
+      --card-hover: #5dade2;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      text-align: center;
+      padding: 2rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    h1 {
+      color: var(--text-color);
+    }
+
+    p {
+      max-width: 600px;
+      margin: 1rem auto 2rem;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: var(--card-color);
+      color: white;
+      border: none;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: var(--card-hover);
+    }
+
+    .dark-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: transparent;
+      border: 2px solid var(--text-color);
+      color: var(--text-color);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-toggle:hover {
+      background-color: var(--card-color);
+      color: white;
+      border-color: var(--card-color);
+    }
+  </style>
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
+  <h1>Learn Cryptography Basics</h1>
+  <p>
+    This page introduces the fundamentals of cryptography through three key concepts: hash functions, weak passwords, and encryption. Click below to explore external resources and learn how these concepts apply in the real world.
+  </p>
+  <div class="button-container">
+    <a href="https://www.cloudflare.com/learning/ssl/what-is-a-hash-function/" target="_blank" class="btn">Hash Functions</a>
+    <a href="https://www.cybernews.com/secure-password/most-common-passwords/" target="_blank" class="btn">Weak Passwords</a>
+    <a href="https://cryptii.com/" target="_blank" class="btn">Encryption & Decryption</a>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
